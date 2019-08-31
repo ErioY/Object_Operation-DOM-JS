@@ -1,0 +1,34 @@
+<!--
+ * @Autor: ErioY
+ * @Date: 2019-08-31 19:38:10
+ * @Email: 1973545559@qq.com
+ * @Github: https://github.com/ErioY
+ * @LastEditors: ErioY
+ * @LastEditTime: 2019-08-31 19:46:10
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>判断属性是否存在</title>
+</head>
+<body>
+    <script>
+    // 创建一个cat对象，包含属性：name、sex和color。用delete删除name属性，
+    // 给sex赋值为undefined，给color赋值为null。用hasOwnProperty()函数判断各个属性是否存在
+    var cat = {
+        "name": "cat",
+        "sex": undefined,
+        "color": null
+    }
+    // 删除name属性
+    delete cat.name;
+    // 属性存在则返回true，不存在则返回false
+    console.log(cat.hasOwnProperty("name"));
+    console.log(cat.hasOwnProperty("sex"));
+    console.log(cat.hasOwnProperty("color"));
+    </script>
+</body>
+</html>
